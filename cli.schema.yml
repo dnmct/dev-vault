@@ -1,0 +1,14 @@
+version: 1
+imports: []
+schemas:
+  - id: cli
+    desc: command line interface reference
+    children: [cmd, env]
+    title: cli
+    parent: root
+    namespace: true
+  - id: env
+    desc: cli specific env variables
+  - id: cmd
+    desc: subcommands
+    namespace: true
