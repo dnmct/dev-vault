@@ -9,17 +9,7 @@ schemas:
   # Operator
   - id: operator
     children:
-      [
-        comment,
-        create,
-        compare,
-        equal,
-        scope,
-        inspect,
-        format,
-        iterate,
-        destructure,
-      ]
+      [comment, create, compare, equal, inspect, format, iterate, destructure]
   - id: comment
   - id: create
   - id: compare
@@ -27,7 +17,6 @@ schemas:
     children: [value, reference]
   - id: value
   - id: reference
-  - id: scope
   - id: inspect
   - id: format
   - id: iterate
@@ -76,7 +65,8 @@ schemas:
   # Functional
   - id: func
     title: functional
-    children: [positional, varargs, keyword, mixed, defaults]
+    children: [scope, positional, varargs, keyword, mixed, defaults]
+  - id: scope
   - id: positional
   - id: varargs
   - id: keyword
