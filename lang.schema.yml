@@ -65,8 +65,9 @@ schemas:
   # Functional
   - id: func
     title: functional
-    children: [scope, positional, varargs, keyword, mixed, defaults]
+    children: [scope, closure, positional, varargs, keyword, mixed, defaults]
   - id: scope
+  - id: closure
   - id: positional
   - id: varargs
   - id: keyword
